@@ -14,9 +14,15 @@ $(document).ready(function(){
 
 //taking each user input and entering in guess box//
 $('.button').click(function() {
+	event.preventDefault();
 	var userGuess = $('.text').val();
 	var guess = parseInt(userGuess);
-	$('.guessBox').html(guess);
+	$('.guessBox').append(guess + ", ");
+
+//ensure the user is entering a usable value//
+if (guess > 100) {
+		alert("Enter a number between 1 and 100")
+	}
 
 //generating the computer choice and running compare funtion//
 var computerChoice = Math.floor(Math.random()*(100-1)+1);
@@ -25,11 +31,6 @@ console.log("Computer: " + computerChoice);
 $('#feedback').html(compare(guess,computerChoice));
 
 });
-
-//ensure the user is entering a usable value//
-if ("guess" < 1 && "guess" > 100) {
-		alert("Enter a number between 1 and 100")
-	}
 
 //comparison of user entry and computer number//
 function compare(choice1,choice2) {
