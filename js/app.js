@@ -12,6 +12,16 @@ $(document).ready(function(){
   		$(".overlay").fadeOut(1000);
   	});
 
+/*//starting a new game//
+function newGame() {
+}
+
+$('.new').click(function() {
+	newGame();
+
+});*/
+
+
 //taking each user input and entering in guess box//
 $('.button').click(function() {
 	event.preventDefault();
@@ -55,15 +65,6 @@ function compare(choice1,choice2) {
 }
 
 });
-
-//starting a new game//
-/*function newGame() {
-}
-
-$('.new').click(function() {
-	newGame();
-
-});*/
 
 
 
