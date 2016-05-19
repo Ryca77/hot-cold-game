@@ -41,16 +41,16 @@ $(document).ready(function(){
 	//comparison of user entry and computer number//
 	function compare(choice1,choice2) {
 		while(choice1 !== choice2) {
-			if (choice1 > (choice2 + 50)) {
+			if ((choice1, choice2) >=50) {
 				return "Ice Cold!";
 			}
-			else if (choice1 > (choice2 + 30)) {
+			else if ((choice1, choice2) >= 30 && (choice1, choice2) <= 50) {
 				return "Cold!";
 			}
-			else if (choice1 > (choice2 + 20)) {
+			else if ((choice1, choice2) >= 20 && (choice1, choice2) <= 30) {
 				return "Warm!";
 			}
-			else if (choice1 > (choice2 + 10)) {
+			else if ((choice1, choice2) >= 10 && (choice1, choice2) <= 20) {
 				return "Hot!";
 			}
 			else {
