@@ -52,13 +52,13 @@ $(document).ready(function(){
 			else if (difference >= 30 && difference <= 50) {
 				return "Cold!";
 			}
-			else if (difference >= 20 && difference <= 30) {
+			else if (difference >= 15 && difference <= 30) {
 				return "Warm!";
 			}
-			else if (difference >= 10 && difference <= 20) {
+			else if (difference >= 5 && difference <= 15) {
 				return "Hot!";
 			}
-			else if (difference >= 1 && difference <= 10) {
+			else if (difference >= 1 && difference <= 5) {
 				return "Very Hot!";
 			}
 			else if (difference === 0) {
