@@ -40,17 +40,18 @@ $(document).ready(function(){
 
 	//comparison of user entry and computer number//
 	function compare(choice1,choice2) {
+		var difference = Math.abs(choice1 - choice2);
 		while(choice1 !== choice2) {
-			if ((choice1, choice2) >=50) {
+			if (difference >=50) {
 				return "Ice Cold!";
 			}
-			else if ((choice1, choice2) >= 30 && (choice1, choice2) <= 50) {
+			else if (difference >= 30 && difference <= 50) {
 				return "Cold!";
 			}
-			else if ((choice1, choice2) >= 20 && (choice1, choice2) <= 30) {
+			else if (difference >= 20 && difference <= 30) {
 				return "Warm!";
 			}
-			else if ((choice1, choice2) >= 10 && (choice1, choice2) <= 20) {
+			else if (difference >= 10 && difference <= 20) {
 				return "Hot!";
 			}
 			else {
